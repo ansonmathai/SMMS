@@ -1,0 +1,39 @@
+# Node modules
+/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files
+.env
+*.env
+
+# Build output
+/dist/
+/build/
+
+# VS Code settings
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Optional: coverage reports
+/coverage/
+
+# Optional: TypeScript
+*.tsbuildinfo
+
+# Optional: Next.js or other frameworks
+.next/
+out/
