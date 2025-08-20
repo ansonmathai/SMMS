@@ -1,0 +1,59 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - 'backend/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - 'backend/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: ⚡ Cache frontend dependencies
+        uses: actions/cache@v3
+        with:
+          path: frontend/node_modules
+          key: ${{ runner.os }}-frontend-${{ hashFiles('frontend/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-frontend-
+
+      - name: ⚡ Cache backend dependencies
+        uses: actions/cache@v3
+        with:
+          path: backend/node_modules
+          key: ${{ runner.os }}-backend-${{ hashFiles('backend/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-backend-
+
+      - name: 📦 Install frontend dependencies
+        run: cd frontend && npm install
+
+      - name: 📦 Install backend dependencies
+        run: cd backend && npm install
+
+      - name: 🔍 Lint frontend
+        run: cd frontend && npm run lint
+
+      - name: 🛠️ Build frontend
+        run: cd frontend && npm run build
+
+      - name: 🧪 Test backend
+        run: cd backend && npm test
