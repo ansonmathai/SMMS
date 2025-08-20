@@ -46,7 +46,7 @@ This project is under active development.
 ## 🧪 Setup Instructions
 
 # Clone the repo
-git clone https://github.com/your-username/smms.git
+git clone https://github.com/ansonmathai/smms.git
 cd smms
 
 # Install frontend dependencies
