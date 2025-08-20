@@ -1,0 +1,28 @@
+.date-time-display {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f9f9f9;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.date-time-display .time {
+  font-size: 1.5em;
+  margin-right: 20px; /* Space between time and date/day */
+}
+
+.date-time-display .date-day-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.date-time-display .date, 
+.date-time-display .day {
+  font-size: 1em;
+}

@@ -1,0 +1,77 @@
+{
+    "products": [
+      {
+        "Product": "Milk",
+        "Quantity": 10,
+        "Expiry-Date": "2024-12-31",
+        "MRP": 50
+      },
+      {
+        "Product": "Bread",
+        "Quantity": 20,
+        "Expiry-Date": "2024-11-15",
+        "MRP": 30
+      },
+      {
+        "Product": "Eggs",
+        "Quantity": 100,
+        "Expiry-Date": "2024-10-25",
+        "MRP": 5
+      },
+      {
+        "Product": "Cheese",
+        "Quantity": 15,
+        "MRP": 120,
+        "Expiry-Date": "2024-12-01"
+      },
+      {
+        "Product": "Butter",
+        "Quantity": 25,
+        "MRP": 80,
+        "Expiry-Date": "2024-11-10"
+      },
+      {
+        "Product": "Yogurt",
+        "Quantity": 30,
+        "MRP": 45,
+        "Expiry-Date": "2024-11-20"
+      },
+      {
+        "Product": "Chicken",
+        "Quantity": 50,
+        "MRP": 150,
+        "Expiry-Date": "2024-10-30"
+      },
+      {
+        "Product": "Beef",
+        "Quantity": 40,
+        "MRP": 200,
+        "Expiry-Date": "2024-11-05"
+      },
+      {
+        "Product": "Fish",
+        "Quantity": 35,
+        "MRP": 180,
+        "Expiry-Date": "2024-10-27"
+      },
+      {
+        "Product": "Apples",
+        "Quantity": 60,
+        "MRP": 20,
+        "Expiry-Date": "2024-11-25"
+      },
+      {
+        "Product": "Bananas",
+        "Quantity": 70,
+        "MRP": 15,
+        "Expiry-Date": "2024-11-18"
+      },
+      {
+        "Product": "Oranges",
+        "Quantity": 50,
+        "MRP": 25,
+        "Expiry-Date": "2024-11-22"
+      }
+    ]
+  }
+  
